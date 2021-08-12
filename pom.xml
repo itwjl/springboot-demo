@@ -56,18 +56,22 @@
         </dependency>
         <!--集成redis end-->
         
-        <!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-data-redis</artifactId>-->
-<!--        </dependency>-->
+
+        <!-- 集成Kafka start-->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+        <!-- 集成Kafka end-->
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.kafka</groupId>-->
-<!--            <artifactId>spring-kafka</artifactId>-->
-<!--        </dependency>-->
 
 <!--        <dependency>-->
 <!--            <groupId>mysql</groupId>-->
@@ -92,12 +96,7 @@
         </dependency>
 
     </dependencies>
-
-<!--    <build>-->
-<!--        <plugins>-->
-
-<!--        </plugins>-->
-<!--    </build>-->
+    
     <build>
         <plugins>
             <plugin>
