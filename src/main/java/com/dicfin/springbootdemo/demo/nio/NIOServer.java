@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * @author wjl
+ */
 public class NIOServer {
 
     private static List<SocketChannel> channelList = new ArrayList<>();
