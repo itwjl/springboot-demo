@@ -86,7 +86,7 @@ public class Fun5 {
                 Map<String, Consumer<String>> FUNC_MAP = new ConcurrentHashMap<>();
                 FUNC_MAP.put(MAN, person-> System.out.println(person + "应该去男厕所"));
                 FUNC_MAP.put(WOMAN, person-> System.out.println(person + "应该去女厕所"));
-                // 应为是无类型，取值使用反射
+                // 因为是无类型，取值使用反射
                 String gender = message.getClass().getField("gender").get(message).toString();
                 String name = message.getClass().getField("name").get(message).toString();
                 FUNC_MAP.get(gender).accept(name);
